@@ -51,9 +51,8 @@
       <p class="single-text">
         <%= @blog.body %>
       </p>
-      <!-- 編集部分 -->
       <%= link_to "編集", edit_blog_path(@blog) %>
-      <a href="#">削除</a>
+      <%= link_to "削除", blog_path(@blog), method: :delete %>
       <div class="author-case clearfix">
         <div class="author-image"></div>
         <div class="author-box">
@@ -65,7 +64,7 @@
         </div>
       </section>
     </section>
-    
+
     <div class="sidebar">
       <section class="popular">
         <h2 class="sidebar-headline">Popular</h2>
